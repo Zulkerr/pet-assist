@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pet-Assist - FAQ</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>🐾 Pet-Assist</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Start</a></li>
+                <li><a href="so-funktionierts.html">So funktioniert's</a></li>
+                <li><a href="tiere-finden.html">Tiere finden</a></li>
+                <li><a href="fuer-tierheime.html">Für Tierheime</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Häufig gestellte Fragen</h2>
+
+
+            <div class="faq-item">
+                <button class="faq-question">Wie funktioniert Pet-Assist?</button>
+                <div class="faq-answer">Pet-Assist verbindet Tierfreunde mit Tierheimen. Du kannst Tiere online ansehen und Kontakt aufnehmen.</div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question">Ist die Nutzung kostenlos?</button>
+                <div class="faq-answer">Ja, Pet-Assist ist für Tierheime und Nutzer komplett kostenlos.</div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question">Wie kann ich mein Tierheim registrieren?</button>
+                <div class="faq-answer">Gehe auf die Seite „Für Tierheime“ und fülle das Formular aus.</div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; Pet-Assist - Eine Plattform für Tierfreunde</p>
+    </footer>
+
+    <script>
+        const questions = document.querySelectorAll('.faq-question');
+        questions.forEach( q => {
+            q.addEventListener('click', () => {
+                q.classList.toggle('open');
+                q.nextElementSibling.classList.toggle('visible');
+            });
+        });
+    </script>
+</body>
+</html>
